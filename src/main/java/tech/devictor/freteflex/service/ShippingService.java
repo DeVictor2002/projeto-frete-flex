@@ -24,6 +24,6 @@ public class ShippingService {
         } else if (shippingType.equalsIgnoreCase("express")) {
             return expressShippingCalculator.calculate(distance, weight);
         }
-        return 0.0;
+        return null;
     }
 }
