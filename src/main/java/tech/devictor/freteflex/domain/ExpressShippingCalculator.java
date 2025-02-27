@@ -7,6 +7,6 @@ public class ExpressShippingCalculator implements ShippingCalculator{
 
     @Override
     public Double calculate(Double distance, Double weight) {
-        return 0.0;
+        return weight * 1.5 + distance * 0.75;
     }
 }
