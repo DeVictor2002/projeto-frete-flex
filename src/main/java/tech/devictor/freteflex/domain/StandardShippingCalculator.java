@@ -4,6 +4,6 @@ public class StandardShippingCalculator implements ShippingCalculator{
 
     @Override
     public Double calculate(Double distance, Double weight) {
-        return 0.0;
+        return weight * 1.0 + distance * 0.5;
     }
 }
