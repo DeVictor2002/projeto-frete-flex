@@ -19,11 +19,11 @@ public class ShippingService {
     public Double calculate(String shippingType,
                             Double distance,
                             Double weight) {
-        if (shippingType.equalsIgnoreCase("standatd")) {
+        if (shippingType.equalsIgnoreCase("standard")) {
             return standardShippingCalculator.calculate(distance, weight);
         } else if (shippingType.equalsIgnoreCase("express")) {
             return expressShippingCalculator.calculate(distance, weight);
         }
-        return null;
+        return 0.0;
     }
 }
